@@ -1,0 +1,141 @@
+/*!imports */
+@font-face {
+    font-family:'Outfit' ;
+    src: url(./Outfit/static/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url(./Outfit/static/Outfit-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family:'Outfit' ;
+    src: url(./Outfit/static/Outfit-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Young Serif';
+    src: url(./Young_Serif/YoungSerif-Regular.ttf);
+    font-weight:400 ;
+}
+/*!reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+
+/*!global */
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+body{
+    line-height: 2;
+    font-size: 16px;
+    font-family: 'Young Serif';
+    font-family: 'Outfit';
+}
+.contianer{
+    padding: 1em;
+}
+b,p{
+    color: var(--Stone-600);
+}
+h2{
+    color: var(--Brown-800);
+}
+ul li::marker, 
+ol li::marker {
+    color: var(--Brown-800);
+}
+.order-list li{
+    /* text-indent: 1em; */
+    padding: .7em;
+}
+/*!body */
+main{
+    width: 100%;
+    padding: 1em;
+}
+main img{
+    display: none;
+}
+.article-2{
+    background-color: var(--Rose-50);
+    width: 84%;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    padding: 1.4em;
+    border-radius: .625em;
+    -webkit-border-radius: .625em;
+    -moz-border-radius: .625em;
+    -ms-border-radius: .625em;
+    -o-border-radius: .625em;
+}
+.article-2 p{
+    color: rgb(227, 73, 178);
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+/*?start footer */
+table{
+    text-align: center;
+    width:300px;
+}
+tr td:first-child{
+    color: var(--Stone-600);
+}
+tr td b{
+    color: var(--Brown-800);
+}
+tr ::after{
+    content: '';
+    display: block;
+    border: 1px solid var(--Stone-150);
+    width: 100%;
+    margin: 0 6em 0 0;
+}
+
+/*!media query */
+@media screen and (min-width:1200px) {
+    body{
+        background-color: var(--Stone-100);
+    }
+    main{
+        width: 40%;
+        margin: 3em auto;
+        padding: 2em;
+        background-color: var(--White);
+    }
+    main img{
+        display: block;
+        border-radius: .625em;
+        -webkit-border-radius: .625em;
+        -moz-border-radius: .625em;
+        -ms-border-radius: .625em;
+        -o-border-radius: .625em;
+    }
+    figure img {
+        display: none;
+    }
+    table{
+        text-align: justify;
+        margin: 0 1em;
+        width: 500px;
+    }
+}
